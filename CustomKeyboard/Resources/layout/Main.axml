@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/container"
+        android:layout_alignParentTop="true"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/keyboard_view">
+        <EditText
+            android:layout_width="fill_parent"
+            android:id="@+id/target"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <customkeyboard.CustomKeyboardView
+        android:id="@+id/keyboard_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
